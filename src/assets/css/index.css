@@ -1,5 +1,6 @@
 :root {
   background-color: #eff0f2;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 a {
@@ -11,8 +12,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
-
 
 body {
   margin: 0;
@@ -56,5 +55,106 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.cui-loader--content {
+  background: transparent;
+  height: 100%;
+  padding: 1.1875em 3.4375em 0 4.0625em;
+  width: 100%;
+}
+
+.cui-loader__header,
+.cui-loader__row {
+  display: flex;
+}
+
+.cui-loader__header {
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.cui-loader__row {
+  align-items: center;
+  height: 60px;
+}
+
+.cui-loader__row-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .cui-loader__row-items {
+    flex-direction: row;
+  }
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.cui-loader__breadcrumb,
+.cui-loader__actions,
+.cui-loader__row-img,
+.cui-loader__row-item {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+}
+
+.cui-loader__breadcrumb {
+  height: 20px;
+  width: 152px;
+}
+
+.cui-loader__actions {
+  height: 20px;
+  width: 200px;
+}
+
+.cui-loader__row-img {
+  border-radius: 50%;
+  height: 40px;
+  margin-right: 20px;
+  width: 40px;
+}
+
+.cui-loader__row-item {
+  height: 20px;
+  margin: 5px 0;
+  width: 75%;
+}
+@media screen and (min-width: 700px) {
+  .cui-loader__row-item {
+    margin: 0;
+    width: 20%;
   }
 }

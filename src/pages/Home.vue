@@ -1,7 +1,75 @@
 <template>
     <div>
+        <div v-if="loading">
+            <div class="cui-loader cui-loader--content">
+                <div class="cui-loader__page">
 
-        <div>
+
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cui-loader__page">
+
+
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                    <div class="cui-loader__row">
+                        <div class="cui-loader__row-img"></div>
+                        <div class="cui-loader__row-items">
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                            <div class="cui-loader__row-item"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div v-else>
             <h2 class="text-4xl text-brand font-bold">Introduction to the POS docs</h2>
             <p class="my-6 text-base text-gray-700 ">
                 Best POS, Invoicing, Inventory & Service management application for your growing business!
@@ -44,9 +112,21 @@
 
 <script>
 export default {
+    components: {
 
-
-
+    },
+    data() {
+        return {
+            loading: true
+        }
+    },
+    mounted() {
+        if (this.loading === true) {
+            setTimeout(() => {
+                this.loading = false;
+            }, 1500);
+        }
+    }
 }
 </script>
 
