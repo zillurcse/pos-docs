@@ -80,7 +80,9 @@
 </template>
 
 <script>
-import lodder from '../../components/lodder.vue'
+
+const lodder = await import(`../../components/lodder.vue`)
+
 export default {
     components: { lodder },
     data() {
