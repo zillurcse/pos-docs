@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import lodder from '../../components/lodder.vue'
+import lodder from '../../components/Lodder.vue'
 export default {
     components: { lodder },
     data() {
