@@ -180,7 +180,7 @@
                         </svg>
                     </div>
                     <div class="overflow-hidden  transition-all duration-500 ease-in px-3"
-                        :class="is_open_products ? 'max-h-[800px]' : 'max-h-0'">
+                        :class="is_open_products ? 'max-h-[900px]' : 'max-h-0'">
                         <div class=" py-2">
                             <router-link to="/Products-Management"
                                 class="text-sm text-brand font-semibold px-4 border-l-[3px] border-transparent">
