@@ -1,72 +1,7 @@
 <template>
     <div>
         <div v-if="loading">
-            <div class="cui-loader cui-loader--content">
-                <div class="cui-loader__page">
-
-
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="cui-loader__page">
-
-
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                    <div class="cui-loader__row">
-                        <div class="cui-loader__row-img"></div>
-                        <div class="cui-loader__row-items">
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                            <div class="cui-loader__row-item"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <lodder />
         </div>
         <div v-else>
             <h2 class="text-5xl text-brand font-bold mb-6">Resetting data, Deleting all data or transactions</h2>
@@ -94,9 +29,10 @@
 </template>
 
 <script>
+import lodder from '../../components/Lodder.vue';
 export default {
     components: {
-
+        lodder
     },
     data() {
         return {
