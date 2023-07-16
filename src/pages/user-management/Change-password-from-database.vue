@@ -40,9 +40,9 @@
 </template>
 
 <script>
-import Lodder from '../../components/Lodder.vue'
+import lodder from '../../components/Lodder.vue'
 export default {
-    components: { Lodder },
+    components: { lodder },
     data() {
         return {
             loading: true

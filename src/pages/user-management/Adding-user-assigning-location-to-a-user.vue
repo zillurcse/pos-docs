@@ -41,11 +41,9 @@
 </template>
 
 <script>
-import lodder from '../../components/Lodder.vue';
+import lodder from '../../components/Lodder.vue'
 export default {
-    components: {
-        lodder
-    },
+    components: { lodder },
     data() {
         return {
             loading: true
