@@ -1,6 +1,6 @@
 :root {
   background-color: #eff0f2;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 a {
@@ -15,11 +15,6 @@ a:hover {
 
 body {
   margin: 0;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -116,15 +111,15 @@ button:focus-visible {
 .cui-loader__row-img,
 .cui-loader__row-item {
   -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-name: placeHolderShimmer;
-          animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   background: #f6f7f8;
   background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
   background-size: 800px 104px;
@@ -157,4 +152,33 @@ button:focus-visible {
     margin: 0;
     width: 20%;
   }
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: #2e2d4d;
+  font-weight: 700;
+}
+h3{
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: #2e2d4d;
+  font-weight: 700;
+}
+p{
+  margin:16px 0;
+  font-size: 16px;
+  color: #374151;
+}
+ul{
+  padding: 0 32px;
+  list-style-type: decimal;
+}
+ul li{
+  margin:16px 0;
+  font-size: 16px;
+  color: #374151;
 }
