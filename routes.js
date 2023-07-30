@@ -59,6 +59,22 @@ import RackRowPositionProduct from './src/pages/products/Rack-row-position-of-pr
 import SellingPriceGroups from './src/pages/products/Selling-Price-Groups.vue'
 import Variations from './src/pages/products/Variations.vue'
 
+// sells
+
+import CashRegister from './src/pages/Sells/Cash-register.vue'
+import FeaturedProducts from './src/pages/Sells/Featured-products.vue'
+import InvoiccLayout from './src/pages/Sells/Invoice-layout.vue'
+import SalesOrder from './src/pages/Sells/Sales-Order.vue'
+import SalesReturn from './src/pages/Sells/Sales-return.vue'
+import SalesSubscriptions from './src/pages/Sells/Sales-subscriptions.vue'
+import SellingPos from './src/pages/Sells/Selling-pos.vue'
+import TenderChangeORchangeReturn from './src/pages/Sells/Tender-change-or-change-return.vue'
+import Usingposforsellingofservices from './src/pages/Sells/Using-pos-for-selling-of-services.vue'
+
+
+
+
+
 
 
 
@@ -262,6 +278,53 @@ const routes = [{
         component: Variations,
     },
 
+    // sells///
+    
+    {
+        path: "/CashRegister",
+        name: "CashRegister",
+        component: CashRegister,
+    },
+    {
+        path: "/FeaturedProducts",
+        name: "FeaturedProducts",
+        component: FeaturedProducts,
+    },
+    {
+        path: "/InvoiccLayout",
+        name: "InvoiccLayout",
+        component: InvoiccLayout,
+    },
+    {
+        path: "/SalesOrder",
+        name: "SalesOrder",
+        component: SalesOrder,
+    },
+    {
+        path: "/SalesReturn",
+        name: "SalesReturn",
+        component: SalesReturn,
+    },
+    {
+        path: "/SalesSubscriptions",
+        name: "SalesSubscriptions",
+        component: SalesSubscriptions,
+    },
+    {
+        path: "/SellingPos",
+        name: "SellingPos",
+        component: SellingPos,
+    },
+    {
+        path: "/TenderChangeORchangeReturn",
+        name: "TenderChangeORchangeReturn",
+        component: TenderChangeORchangeReturn,
+    },
+    {
+        path: "/Usingposforsellingofservices",
+        name: "Usingposforsellingofservices",
+        component: Usingposforsellingofservices,
+    }
 
 ];
 

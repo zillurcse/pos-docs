@@ -1,5 +1,5 @@
 <template>
-    <nav class="" style="box-shadow: 0 2px 5px #0000004d;">
+    <nav class="fixed w-full top-0 z-10 bg-[#eff0f2]" style="box-shadow: 0 2px 5px #0000004d;">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between py-4">
                 <div class="flex items-center">
