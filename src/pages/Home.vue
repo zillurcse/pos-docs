@@ -5,19 +5,9 @@
         </div>
 
         <div v-else>
-            <h2 class="text-4xl text-brand font-bold">Introduction to the POS docs</h2>
+            <h2 class="text-4xl text-brand font-bold">{{ $t('Introduction to the POS docs') }}</h2>
             <p class="my-6 text-base text-gray-700 ">
-                Best POS, Invoicing, Inventory & Service management application for your growing business!
-                <br>
-                The pace of business growth has never been faster.
-
-                That's why we’ve designed our cloud-based POS software to help you get ahead.
-
-                The easiest, most reliable way to grow and manage your business is right at your fingertips with our
-                cloud-based
-                POS and inventory management system.
-
-                Right software can be a lifesaver for your business, and with it, you can revolutionize your business's grow
+                {{ $t('intro_text')}}
             </p>
             <ul class="list-disc px-6 py-4">
                 <li class="my-4 text-base text-gray-700">Check your business data from anywhere, anytime. See live updates
